@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Global Parcel Service",
-    "slug": "gpsmobile",
+    "name": "Global Parcel Services",
+    "slug": "global-parcel-services",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -12,16 +12,24 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.awaisyamin.gpsmobile"
+      "bundleIdentifier": "com.globalparcelservices.gps"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.awaisyamin.gpsmobile"
+      "package": "com.globalparcelservices.gps",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDijHUErzb3XpdU6QCbEjiYAWKAqm0E0Sk"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
@@ -30,16 +38,22 @@
     },
     "plugins": [
       "expo-router",
+      "expo-font",
       "expo-secure-store"
     ],
     "experiments": {
       "typedRoutes": true
     },
     "extra": {
+      "router": {
+        "origin": false
+      },
       "eas": {
-        "projectId": "a12afbf9-61d4-4409-8f03-8f84e9607035"
+        "projectId": "bcebf64e-adfd-4813-8640-ebf5b633cd12"
       }
     },
-    "owner": "awaisyamin"
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
   }
 }
